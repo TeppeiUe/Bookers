@@ -4,12 +4,30 @@
   box-sizing:border-box;
 }
 
+
 body{
+  width:100%;
+  margin:33px;
   font-size:13px;
   line-height:18px;
-  margin:33px;
+  font-family: verdana, arial, helvetica, sans-serif;
 }
 
 p{
-  margin:33;
+  margin:33px;
+}
+
+th{
+  display:table-cell;
+  padding:1px 1px 5px;
+  font-weight:bold;
+  text-align:center;
+}
+
+h2{
+  margin:10px 0;
+}
+
+.field, .action{
+  margin-bottom:10px;
 }
