@@ -3,11 +3,6 @@
   margin:0;
   box-sizing:border-box;
 }
-
-h1{
-  margin:10px 0;
-}
-
 body{
   width:100%;
   margin:33px;
@@ -16,13 +11,16 @@ body{
   font-family: verdana, arial, helvetica, sans-serif;
 }
 
+h1{
+  margin:0.67em 0;
+}
+
 p{
   margin:33px;
 }
 
 table{
   display:table;
-  width:50%;
 }
 
 th{
@@ -38,9 +36,21 @@ td{
 }
 
 h2{
-  margin:10px 0;
+  margin:0.83em 0;
 }
 
 .field, .action{
   margin-bottom:10px;
+}
+.book_title{
+  padding:1px 2px;
+}
+.book_body{
+  padding:2px;
+}
+.btn{
+  padding:1px 6px;
+}
+#notice{
+  color:green;
 }

@@ -12,9 +12,9 @@
       <tr>
         <td><%=book.title%></td>
         <td><%=book.body%></td>
-        <td><%=link_to"show",book_path(book)%></td>
-        <td><%=link_to"edit",edit_book_path(book)%></td>
-        <td>destroy</td>
+        <td><%=link_to"Show",book_path(book)%></td>
+        <td><%=link_to"Edit",edit_book_path(book)%></td>
+        <td><%=link_to"Destroy",book_path(book),method: :delete,"data-confirm"=>"Are you sure?"%></td>
       </tr>
     <%end%>
   </tbody>
@@ -23,13 +23,13 @@
   <%=form_with model:@book,local:true do|f|%>
     <div class="field">
       <div class="label">Title</div>
-      <%=f.text_field:title%>
+      <%=f.text_field:title,class:"book_title"%>
     </div>
     <div class="field">
       <div class="label">body</div>
-      <%=f.text_area:body%>
+      <%=f.text_area:body,class:"book_body"%>
     </div>
     <div class="action">
-      <%=f.submit "Create Book"%>
+      <%=f.submit"Create Book",class:"btn"%>
     </div>
   <%end%>
